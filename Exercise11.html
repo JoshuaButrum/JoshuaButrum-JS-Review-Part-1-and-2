@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Variable for Every JavaScript Data Type</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body { padding: 30px; }
+    </style>
+</head>
+<body>
+    
+
+    <!--🔥🔥🔥🔥 start javascript 🔥🔥🔥🔥-->
+    <script>
+        // variable that holds a string value
+        var firstName = "Joshua";
+
+        // variable that holds a number value
+        var age = 17;
+
+        // variable that holds a boolean value
+        console.log(Boolean("Joshua"));
+
+        // variable that holds a null value
+        let movedOut = null;
+
+        // variable that holds an undefined value
+        let isMarried;
+        console.log(isMarried); // Output: undefined
+
+        // variable that points to an object instance
+        class Person {
+            constructor(firstName, age) {
+                this.firstName = firstName;
+                this.age = age;
+            }
+
+            sayHello() {
+                console.log(`Hello, my name is ${this.firstName} and I am ${this.age} years old.`);
+            }
+        }
+
+        var person = new Person("Joshua", 17);
+
+        person.sayHello(); // Output: "Hello, my name is Joshua and I am 17 years old."
+
+        // variable that points to an array instance
+        const colors = ["red", "green", "blue"];
+
+        console.log(colors[0]); // Output: "red"
+        console.log(colors.length); // Output: 3
+
+        colors.push('yellow');
+        console.log(colors); // Output: ["red", "green", "blue", "yellow"]
+
+        // variable that has no default value description
+        let color;
+        console.log(color + ' is my favorite color'); // Output: undefined is my favorite color
+    </script>
+</body>
+</html>

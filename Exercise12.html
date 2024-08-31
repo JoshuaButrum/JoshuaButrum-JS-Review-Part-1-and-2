@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamically Display a List of Food Items and Prices using HTML & JavaScript</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body { padding: 30px; }
+    </style>
+</head>
+<body>
+    
+
+    <!--🔥🔥🔥🔥 start javascript 🔥🔥🔥🔥-->
+    <script>
+
+        const foodList = [
+            {
+                name: 'Pizza',
+                price: 10
+            },
+            {
+                name: 'Hamburger',
+                price: 5
+            },
+            {
+                name: 'Pasta',
+                price: 8
+            },
+            {
+                name: 'Soup',
+                price: 3
+            },
+            {
+                name: 'Salad',
+                price: 6
+            }
+        ];
+
+        for (let i = 0; i < foodList.length; i++) {
+            const food = foodList[i];
+            console.log(food.name);
+        }
+
+        for (let food of foodList) {
+            console.log(food.name);
+        }
+
+        
+
+        console.log(foodList);
+    </script>
+</body>
+</html>
